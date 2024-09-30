@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full Height Body and HTML */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling when elements fall */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+/* Main Container */
+#main-container {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #fff;
+}
+
+/* Title Styling */
+#title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #ff6b6b;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 20px;
+}
+
+/* Input Field */
+input#search-input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Danger Button (for Clear History) */
+.btn.danger {
+    background: linear-gradient(120deg, #f76b1c 0%, #fad961 100%);
+}
+
+/* History Title */
+#history-title {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #ff9a9e;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Search History List */
+.history-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* History List Items */
+.history-list li {
+    margin: 5px 0;
+    background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on list items */
+.history-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating elements in the DOM (inputs, buttons, history items) */
+#title, #history-title, .btn, #search-input, li {
+    visibility: visible; /* Always visible now */
+}
+
+/* Ensure the list appears below the title and buttons */
+#history-title {
+    font-size: 22px;
+    color: #ff6b6b;
+}
